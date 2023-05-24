@@ -35,7 +35,6 @@ export const Hero = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
 
             {/*right side*/}
