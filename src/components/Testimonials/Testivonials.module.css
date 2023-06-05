@@ -83,6 +83,7 @@
     letter-spacing: 1px;
     margin-top: 2rem;
 }
+
 .testimonial > span:nth-of-type(2) {
     font-weight: 500;
 }
@@ -92,4 +93,21 @@
     width: 80%;
     background: rgb(198, 198, 198);
     border: none;
+}
+
+/*Adaptive*/
+
+
+@media screen and (max-width: 640px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .wrapper > img {
+        width: 80vw;
+    }
+
+    .wrapper > :nth-child(3), .wrapper > :nth-child(1) {
+        text-align: center;
+    }
 }

@@ -21,25 +21,36 @@ export const Testimonials = () => {
                     <span>Happy Customers with us</span>
                 </div>
             </div>
-                <div className={css.reviews}>Reviews</div>
+            <div className={css.reviews}>Reviews</div>
 
             <div className={css.carousel}>
                 <Swiper
-                slidesPerView={3}
-                slidesPerGroup={1}
-                spaceBetween={20}
-                className={css.tCarousel}
+                    slidesPerView={3}
+                    slidesPerGroup={1}
+                    spaceBetween={20}
+                    className={css.tCarousel}
+                    breakpoints={{
+                        856: {
+                            slidesPerView: 3
+                        },
+                        640: {
+                            slidesPerView: 2
+                        },
+                        0: {
+                            slidesPerView: 1
+                        }
+                    }}
 
                 >
                     {TestimonialsData.map((el, i) => {
                         return (
                             <SwiperSlide key={i}>
-                               <div className={css.testimonial}>
-                                   <img src={el.image} alt={el.name}/>
-                                   <span>{el.comment}</span>
-                                   <hr/>
-                                   <span>{el.name}</span>
-                               </div>
+                                <div className={css.testimonial}>
+                                    <img src={el.image} alt={el.name}/>
+                                    <span>{el.comment}</span>
+                                    <hr/>
+                                    <span>{el.name}</span>
+                                </div>
                             </SwiperSlide>
                         )
                     })}

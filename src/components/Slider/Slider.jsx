@@ -12,6 +12,14 @@ export const Slider = () => {
     return (
         <div className='container'>
             <Swiper
+                breakpoints={{
+                    640: {
+                        slidesPerView: 3
+                    },
+                    0: {
+                        slidesPerView: 1
+                    }
+                }}
                 modules={[Pagination, Navigation]}
                 className='miSwiper'
                 navigation={true}

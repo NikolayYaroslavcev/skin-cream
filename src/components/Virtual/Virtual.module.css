@@ -43,6 +43,33 @@
 
 
 }
-.wrapper{
+
+.wrapper {
     width: 30rem;
+}
+
+@media screen and (max-width: 856px) {
+    .virtual {
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 462px) {
+    .wrapper {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .wrapper {
+        width: 22rem;
+    }
 }

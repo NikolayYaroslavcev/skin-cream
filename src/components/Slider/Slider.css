@@ -76,3 +76,17 @@
     width: 40%;
     height: 100%;
 }
+
+/*Adaptive*/
+
+@media screen and (max-width: 856px) {
+    .container .swiper {
+        width: 90%;
+        height: 10rem;
+    }
+
+    .container .swiper-button-prev, .container .swiper-button-next{
+        display: none;
+    }
+
+}
